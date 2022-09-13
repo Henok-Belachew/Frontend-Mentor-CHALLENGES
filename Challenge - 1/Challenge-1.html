@@ -23,12 +23,11 @@
     }
     body {
       background: hsl(212, 45%, 89%);
+     
     }
     .main {
         
       background: white;     
-      justify-content: center;
-      
       
       padding: 13px;
       border-radius: 15px;
@@ -39,19 +38,25 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+     
       
     }
 
     #barcode {
-      width: 250px;
+      width: 280px;
       border-radius: 15px;
+
+      /* Centering the barcode horizontally */
+      margin: 0 auto;
+      display: block;
     }
 
     p {
       text-align: center; 
       font-family: 'Roboto Condensed', sans-serif; 
       color: hsl(219, 15%, 55%); 
-      font-size: 15px;
+      font-size: 13px;
+      margin-bottom: 30px;
     }
 
     h3{
@@ -63,9 +68,7 @@
 
     /* Making the web responsive */
     @media only screen and (max-width: 375px) {
-    body {
-        
-      }
+   
 }
 
 
