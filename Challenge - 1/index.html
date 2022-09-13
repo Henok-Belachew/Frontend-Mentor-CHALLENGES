@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+@import url('https://fonts.google.com/specimen/Outfit');
+    
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .header a {
+      text-decoration: none;
+      color: hsl(228, 45%, 44%);
+    }
+    body {
+      background: hsl(212, 45%, 89%);
+    }
+    .main {
+        
+      background: white;     
+      justify-content: center;
+      
+      
+      padding: 13px;
+      border-radius: 15px;
+      flex-direction: column;
+
+     /* Verticaly and Horizontal Centering */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+    }
+
+    #barcode {
+      width: 250px;
+      border-radius: 15px;
+    }
+
+    p {
+      text-align: center; 
+      font-family: 'Roboto Condensed', sans-serif; 
+      color: hsl(219, 15%, 55%); 
+      font-size: 15px;
+    }
+
+    h3{
+      text-align: center; 
+      color: hsl(218, 44%, 22%); 
+      font-family: sans-serif; 
+      font-size: 19px;
+    }
+
+    /* Making the web responsive */
+    @media only screen and (max-width: 375px) {
+    body {
+        
+      }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <section class="main">
+    <img id="barcode" src="./images/image-qr-code.png" alt="">
+
+    <h3 >Improve your front-end <br> skills by building projects</h3>
+    <p > Scan the QR code to visit Frontend <br>  Mentor and take your coding skills to <br>  the next level</p>
+
+  </section>
+
+  
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Henok Belachew</a>.
+  </div>
+</body>
+</html>
