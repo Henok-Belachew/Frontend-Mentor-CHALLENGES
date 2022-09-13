@@ -14,13 +14,6 @@
 @import url('https://fonts.google.com/specimen/Outfit');
     
     
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    .header a {
-      text-decoration: none;
-      color: hsl(228, 45%, 44%);
-    }
     body {
       background: hsl(212, 45%, 89%);
      
@@ -61,9 +54,37 @@
 
     h3{
       text-align: center; 
-      color: hsl(218, 44%, 22%); 
+      color: hsl(218, 44%, 22%);
       font-family: sans-serif; 
       font-size: 19px;
+    }
+
+    
+    .button {
+      display: flex;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      
+      background: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+
+    }
+
+    .button a{
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+      /* font-weight: bolder; */
+      text-align: center;
+    }
+
+    .button img {
+      width: 30px;
+      margin-left: 10px;
     }
 
     /* Making the web responsive */
@@ -75,6 +96,15 @@
   </style>
 </head>
 <body>
+
+ 
+    <div class="button">
+    
+      <a href="https://github.com/Henok-Belachew/Frontend-Mentor-CHALLENGES"> <span> Challenge-1 </span> <b> Source  Code</b></a>
+      <img  style="align-self: center;" src="./images/GitHub.png" alt="GitHub">
+    </div>
+  
+  
 
   <section class="main">
     <img id="barcode" src="./images/image-qr-code.png" alt="">
@@ -88,9 +118,6 @@
 
  
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Henok Belachew</a>.
-  </div>
+
 </body>
 </html>
