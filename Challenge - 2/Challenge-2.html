@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- @import url(https://fonts.google.com/specimen/Montserrat) -->
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Source+Sans+Pro:wght@300&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background: hsl(30, 38%, 92%)
+    }
+    .main {
+
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0 auto;
+      /* height: 300px; */
+      background: white;
+      width: 600px;
+      border-radius: 15px;
+      display: flex;
+
+    }
+
+    #image {
+      width: 300px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    .content {
+      margin: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* border: red solid; */
+      width: 100%;
+    }
+
+    .content p {
+      font-size: 15px;
+      /* line-height: 25px; */
+      opacity: 70%;
+      align-self: flex-start;
+      font-family: 'Montserrat', sans-serif;
+      /* line-height: 20px; */
+      line-height: 25px;
+      /* font-weight: bold; */
+    }
+
+    .content h1 {
+      align-self: flex-start;
+      font-family: 'Fraunces', serif;
+      font-size: 35px;
+      line-height: 30px;
+      font-weight: bold;
+      
+      
+    }
+
+
+    .content h4{
+      letter-spacing: 9px;
+      align-self: flex-start;
+      font-size: 13px;
+      font-weight: bold;
+      opacity: 60%;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .price {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      align-self: flex-start;
+      align-items: center;
+      /* border: red solid; */
+      
+    }
+
+
+    .price h2{
+      font-family: 'Fraunces', serif;
+      font-weight: bold;
+      color: hsl(158, 36%, 37%);
+      font-size: 35px;
+    }
+
+    .price p{
+      opacity: 60%;
+      /* border: solid red; */
+      align-self: center;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    button {
+      width: 90%;
+      font-weight: bold;
+      padding: 14px 35px;
+      border-radius: 5px;
+      border: none;
+      background: hsl(158, 36%, 37%);
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+      /* word-spacing: 2px; */
+      /* letter-spacing: 2px; */
+      display: flex;
+      font-size: 16px;
+      align-items: center;
+      justify-content: center; 
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: 0px 5px #88888844;
+    }
+
+    button img {
+      padding-right: 9px;
+    }
+    .button {
+      display: flex;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+           
+      background: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+
+    }
+
+    .button a{
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+      /* font-weight: bolder; */
+      text-align: center;
+    }
+
+    .button img {
+      width: 30px;
+      margin-left: 10px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="button">
+    
+    <a href="https://github.com/Henok-Belachew/Frontend-Mentor-CHALLENGES"> <span> Challenge-2 </span> <b> Source  Code</b></a>
+    <img  style="align-self: center;" src="./images/GitHub.png" alt="GitHub">
+  </div>
+
+  <section class="main">
+
+      <img id="image" src="./images/image-product-desktop.jpg" alt="perfume">
+      
+      
+      <div class="content">
+
+        <h4>PERFUME</h4>
+
+        <h1>Gabrielle <br> Essence Eau <br> De Parfum
+        </h1>
+
+        <p>A floral, solar and voluptuous  interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+        
+        </p>
+
+        <div class="price">
+            <h2> $149.99</h2>
+            <p> <s>$169.99</s>s></p>
+        </div>
+
+        <button> <img src="./images/icon-cart.svg">  Add to Cart </button>
+
+      </div>
+
+
+  </section>
+
+
+ 
+
+  
+
+ 
+
+
+
+  
+
+</body>
+</html>
